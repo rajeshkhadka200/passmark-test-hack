@@ -1,8 +1,4 @@
-passmark/node_modules
-passmark/.env
-passmark/package-lock-json
-
-passmark-ui/node_modules
-passmark-ui/.env
-passmark-ui/package-lock-json
+node_modules
+.env
+package-lock-json
 node_modules
