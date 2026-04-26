@@ -58,3 +58,42 @@ test("Navigate to Help or FAQ page", async ({ page }) => {
     expect,
   });
 });
+
+test("Navigate to About page", async ({ page }) => {
+  test.slow();
+  await runSteps({
+    page,
+    userFlow: "Navigate to about page",
+    steps: [
+      { description: "Navigate to https://esewa.com.np" },
+      { description: "Find and click About Us from navigation or footer" },
+    ],
+    assertions: [
+      { assertion: "About page content is visible" },
+      { assertion: "Company information is present" },
+      { assertion: "eSewa mission or vision is mentioned" },
+    ],
+    test,
+    expect,
+  });
+});
+
+test("Navigate back to homepage", async ({ page }) => {
+  test.slow();
+  await runSteps({
+    page,
+    userFlow: "Navigate back to homepage",
+    steps: [
+      { description: "Navigate to https://esewa.com.np" },
+      { description: "Click on any navigation link to go to inner page" },
+      { description: "Click on eSewa logo to go back to homepage" },
+    ],
+    assertions: [
+      { assertion: "Homepage is visible again" },
+      { assertion: "eSewa logo is visible" },
+      { assertion: "Homepage hero section is visible" },
+    ],
+    test,
+    expect,
+  });
+});
