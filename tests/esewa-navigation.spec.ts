@@ -2,7 +2,7 @@ import { test, expect } from "@playwright/test";
 import { runSteps } from "passmark";
 
 test("Navigate to Services page", async ({ page }) => {
-  test.slow();
+  test.setTimeout(60_000);
   await runSteps({
     page,
     userFlow: "Navigate to services",
@@ -22,7 +22,7 @@ test("Navigate to Services page", async ({ page }) => {
 });
 
 test("Navigate to Merchant section", async ({ page }) => {
-  test.slow();
+  test.setTimeout(60_000);
   await runSteps({
     page,
     userFlow: "Navigate to merchant section",
@@ -41,7 +41,7 @@ test("Navigate to Merchant section", async ({ page }) => {
 });
 
 test("Navigate to Help or FAQ page", async ({ page }) => {
-  test.slow();
+  test.setTimeout(60_000);
   await runSteps({
     page,
     userFlow: "Navigate to help page",
@@ -60,7 +60,7 @@ test("Navigate to Help or FAQ page", async ({ page }) => {
 });
 
 test("Navigate to About page", async ({ page }) => {
-  test.slow();
+  test.setTimeout(60_000);
   await runSteps({
     page,
     userFlow: "Navigate to about page",
@@ -79,7 +79,7 @@ test("Navigate to About page", async ({ page }) => {
 });
 
 test("Navigate back to homepage", async ({ page }) => {
-  test.slow();
+  test.setTimeout(60_000);
   await runSteps({
     page,
     userFlow: "Navigate back to homepage",

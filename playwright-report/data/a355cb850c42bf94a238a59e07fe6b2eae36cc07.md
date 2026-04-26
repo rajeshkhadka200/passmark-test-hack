@@ -1,0 +1,300 @@
+# Instructions
+
+- Following Playwright test failed.
+- Explain why, be concise, respect Playwright best practices.
+- Provide a snippet of code with the fix, if possible.
+
+# Test info
+
+- Name: esewa-navigation.spec.ts >> Navigate to Services page
+- Location: tests/esewa-navigation.spec.ts:4:5
+
+# Error details
+
+```
+Test timeout of 60000ms exceeded.
+```
+
+# Page snapshot
+
+```yaml
+- generic [active] [ref=e1]:
+  - generic [ref=e4] [cursor=pointer]: 
+  - banner [ref=e5]:
+    - generic [ref=e7]:
+      - link "eSewa" [ref=e9] [cursor=pointer]:
+        - /url: "#/home"
+        - img "eSewa" [ref=e10]
+      - generic [ref=e17]:
+        - textbox "Search services/merchant by tags (e.g. adsl)" [ref=e18]: 
+        - button "" [ref=e19] [cursor=pointer]:
+          - generic [ref=e20]: 
+      - list [ref=e23]:
+        - form [ref=e25]:
+          - generic [ref=e27]:
+            - generic [ref=e28]:
+              - generic [ref=e29]: 
+              - textbox "eSewa ID" [ref=e30]
+            - generic [ref=e31]:
+              - generic [ref=e32]: 
+              - textbox "Password" [ref=e33]
+              - link "Forgot Password ?" [ref=e34] [cursor=pointer]:
+                - /url: "#/forgot_password"
+            - generic [ref=e35]:
+              - button "Login" [disabled] [ref=e36]
+              - button "Register" [ref=e37] [cursor=pointer]
+  - list [ref=e41]:
+    - link "Top Up" [ref=e42] [cursor=pointer]:
+      - /url: "#"
+    - link "Airlines" [ref=e43] [cursor=pointer]:
+      - /url: "#"
+    - link "Internet Bill" [ref=e44] [cursor=pointer]:
+      - /url: "#"
+    - link "Load Fund" [ref=e45] [cursor=pointer]:
+      - /url: https://blog.esewa.com.np/banks
+  - main [ref=e1155]:
+    - generic [ref=e1159]:
+      - heading "Featured Services" [level=4] [ref=e1163]
+      - tabpanel [ref=e1165]:
+        - list [ref=e1166]:
+          - listitem [ref=e1167]:
+            - figure "Business QR Request View Details" [ref=e1169] [cursor=pointer]:
+              - generic [ref=e1170]: Request QR
+              - generic [ref=e1173]:
+                - heading "Business QR Request" [level=5] [ref=e1174]
+                - button "View Details" [ref=e1175]
+          - listitem [ref=e1176]:
+            - figure "eSpeaker Request View Details" [ref=e1178] [cursor=pointer]:
+              - generic [ref=e1179]: eSpeaker Request
+              - generic [ref=e1182]:
+                - heading "eSpeaker Request" [level=5] [ref=e1183]
+                - button "View Details" [ref=e1184]
+          - listitem [ref=e1185]:
+            - link "3 Years LL.B. 2082/83 View Details" [ref=e1186] [cursor=pointer]:
+              - /url: https://entrance.fol.edu.np/Registration/Payment/HBL
+              - figure "3 Years LL.B. 2082/83 View Details" [ref=e1187]:
+                - generic [ref=e1188]: Admission and Registration
+                - generic [ref=e1191]:
+                  - heading "3 Years LL.B. 2082/83" [level=5] [ref=e1192]
+                  - button "View Details" [ref=e1193]
+          - listitem [ref=e1194]:
+            - link "NEB Payment View Details" [ref=e1195] [cursor=pointer]:
+              - /url: http://payment.neb.gov.np/StudentPortal
+              - figure "NEB Payment View Details" [ref=e1196]:
+                - generic [ref=e1197]: NEB
+                - generic [ref=e1200]:
+                  - heading "NEB Payment" [level=5] [ref=e1201]
+                  - button "View Details" [ref=e1202]
+          - listitem [ref=e1203]:
+            - figure "Nepal Beema Pradhikaran - Agent/Surveyor License Renew View Details" [ref=e1205] [cursor=pointer]:
+              - generic [ref=e1206]: Renew
+              - generic [ref=e1209]:
+                - heading "Nepal Beema Pradhikaran - Agent/Surveyor License Renew" [level=5] [ref=e1210]
+                - button "View Details" [ref=e1211]
+          - listitem [ref=e1212]:
+            - figure "Trade Management System (TMS) View Details" [ref=e1214] [cursor=pointer]:
+              - generic [ref=e1215]: TMS
+              - generic [ref=e1218]:
+                - heading "Trade Management System (TMS)" [level=5] [ref=e1219]
+                - button "View Details" [ref=e1220]
+          - listitem [ref=e1221]:
+            - figure "Alfa Health Care & Diagnostic Center View Details" [ref=e1223] [cursor=pointer]:
+              - generic [ref=e1224]: Up to 50% Cashback
+              - generic [ref=e1227]:
+                - heading "Alfa Health Care & Diagnostic Center" [level=5] [ref=e1228]
+                - button "View Details" [ref=e1229]
+          - listitem [ref=e1230]:
+            - link "RhinoPass View Details" [ref=e1231] [cursor=pointer]:
+              - /url: https://nepal.rhinopass.com
+              - figure "RhinoPass View Details" [ref=e1232]:
+                - generic [ref=e1233]: Food Ordering
+                - generic [ref=e1236]:
+                  - heading "RhinoPass" [level=5] [ref=e1237]
+                  - button "View Details" [ref=e1238]
+          - listitem [ref=e1239]:
+            - figure "Naasa Securities Company Limited View Details" [ref=e1241] [cursor=pointer]:
+              - generic [ref=e1242]: Meroshare
+              - generic [ref=e1245]:
+                - heading "Naasa Securities Company Limited" [level=5] [ref=e1246]
+                - button "View Details" [ref=e1247]
+          - listitem [ref=e1248]:
+            - link "Nepal Airlines - International Flight View Details" [ref=e1249] [cursor=pointer]:
+              - /url: http://bit.ly/nepalairlines
+              - figure "Nepal Airlines - International Flight View Details" [ref=e1250]:
+                - generic [ref=e1253]:
+                  - heading "Nepal Airlines - International Flight" [level=5] [ref=e1254]
+                  - button "View Details" [ref=e1255]
+          - listitem [ref=e1256]:
+            - link "Auditors Association of Nepal(AUDAN) View Details" [ref=e1257] [cursor=pointer]:
+              - /url: https://www.audan.org/
+              - figure "Auditors Association of Nepal(AUDAN) View Details" [ref=e1258]:
+                - generic [ref=e1259]: Renew
+                - generic [ref=e1262]:
+                  - heading "Auditors Association of Nepal(AUDAN)" [level=5] [ref=e1263]
+                  - button "View Details" [ref=e1264]
+  - text:            
+  - generic:
+    - generic:
+      - contentinfo [ref=e1009]:
+        - generic [ref=e1012]:
+          - generic [ref=e1013]:
+            - img "eSewa" [ref=e1015]
+            - generic [ref=e1016]:
+              - heading "Contact Details" [level=4] [ref=e1017]
+              - list [ref=e1018]:
+                - listitem [ref=e1019]: NTC Toll Free – 16600102121
+                - listitem [ref=e1020]: Ncell Toll Free – 18102102121
+                - listitem [ref=e1021]:
+                  - text: "Email :"
+                  - link "csd@esewa.com.np" [ref=e1022] [cursor=pointer]:
+                    - /url: "mailto: csd@esewa.com.np"
+                - listitem [ref=e1023]: Grievance Officer
+                - listitem [ref=e1024]: Bijay Rai
+                - listitem [ref=e1025]:
+                  - 'link "Contact: +9779801079465" [ref=e1026] [cursor=pointer]':
+                    - /url: tel:9779801079465
+                - listitem [ref=e1027]:
+                  - text: "Email :"
+                  - link "bijay.rai@esewa.com.np" [ref=e1028] [cursor=pointer]:
+                    - /url: "mailto: om.karki@esewa.com.np"
+                - listitem [ref=e1029]:
+                  - link "Gunaso - Nepal Rastra Bank" [ref=e1030] [cursor=pointer]:
+                    - /url: https://gunaso.nrb.org.np/
+          - generic [ref=e1032]:
+            - heading "Policy" [level=4] [ref=e1033]
+            - list [ref=e1034]:
+              - listitem [ref=e1035]:
+                - link "AGM NOTICE" [ref=e1036] [cursor=pointer]:
+                  - /url: https://cdn.esewa.com.np/ui/notice/eSewa-AGM-81-82-Notice.pdf
+              - listitem [ref=e1037]:
+                - link "Privacy Policies" [ref=e1038] [cursor=pointer]:
+                  - /url: https://blog.esewa.com.np/privacy-policy
+              - listitem [ref=e1039]:
+                - link "Information Security Policy" [ref=e1040] [cursor=pointer]:
+                  - /url: https://blog.esewa.com.np/information-security-policy
+              - listitem [ref=e1041]:
+                - link "Terms and conditions" [ref=e1042] [cursor=pointer]:
+                  - /url: " https://blog.esewa.com.np/terms-and-conditions"
+              - listitem [ref=e1043]:
+                - link "Report Dispute, Fraud and Misuse" [ref=e1044] [cursor=pointer]:
+                  - /url: https://blog.esewa.com.np/report-fraud-and-misuse
+              - listitem [ref=e1045]:
+                - link "Transaction Limits" [ref=e1046] [cursor=pointer]:
+                  - /url: http://blog.esewa.com.np/revision-in-transaction-limits/
+          - generic [ref=e1048]:
+            - heading "General" [level=4] [ref=e1049]
+            - list [ref=e1050]:
+              - listitem [ref=e1051]:
+                - link "Getting Started" [ref=e1052] [cursor=pointer]:
+                  - /url: "https://blog.esewa.com.np/getting-started "
+              - listitem [ref=e1053]:
+                - link "Security" [ref=e1054] [cursor=pointer]:
+                  - /url: https://blog.esewa.com.np/security
+              - listitem [ref=e1055]:
+                - link "SMS Syntax" [ref=e1056] [cursor=pointer]:
+                  - /url: https://blog.esewa.com.np/sms-syntax
+              - listitem [ref=e1057]:
+                - link "Reward Points" [ref=e1058] [cursor=pointer]:
+                  - /url: https://blog.esewa.com.np/reward-point
+              - listitem [ref=e1059]:
+                - link "Video Tutorials" [ref=e1060] [cursor=pointer]:
+                  - /url: https://blog.esewa.com.np/video
+              - listitem [ref=e1061]:
+                - link "eSewa Tariffs" [ref=e1062] [cursor=pointer]:
+                  - /url: https://blog.esewa.com.np/esewa-tariffs/
+          - generic [ref=e1064]:
+            - heading "Company" [level=4] [ref=e1065]
+            - list [ref=e1066]:
+              - listitem [ref=e1067]:
+                - link "About us" [ref=e1068] [cursor=pointer]:
+                  - /url: https://blog.esewa.com.np/about
+              - listitem [ref=e1069]:
+                - link "Career" [ref=e1070] [cursor=pointer]:
+                  - /url: https://career.esewa.com.np/
+              - listitem [ref=e1071]:
+                - link "Blog/News" [ref=e1072] [cursor=pointer]:
+                  - /url: https://blog.esewa.com.np/
+              - listitem [ref=e1073]:
+                - link "Report" [ref=e1074] [cursor=pointer]:
+                  - /url: javascript:void(0)
+              - listitem [ref=e1075]:
+                - link "Amendment" [ref=e1076] [cursor=pointer]:
+                  - /url: javascript:void(0)
+          - generic [ref=e1078]:
+            - heading "Partners" [level=4] [ref=e1079]
+            - list [ref=e1080]:
+              - listitem [ref=e1081]:
+                - link "Banks" [ref=e1082] [cursor=pointer]:
+                  - /url: https://blog.esewa.com.np/banks
+              - listitem [ref=e1083]: Western Union
+              - listitem [ref=e1084]:
+                - link "eSewa Authorized Representatives" [ref=e1085] [cursor=pointer]:
+                  - /url: https://blog.esewa.com.np/esewa-authorized-representatives/
+          - generic [ref=e1087]:
+            - heading "Help" [level=4] [ref=e1088]
+            - list [ref=e1089]:
+              - listitem [ref=e1090]:
+                - link "Developer's Guide" [ref=e1091] [cursor=pointer]:
+                  - /url: https://developer.esewa.com.np
+              - listitem [ref=e1092]:
+                - link "Logo Guidelines" [ref=e1093] [cursor=pointer]:
+                  - /url: https://cdn.esewa.com.np/ui/notice/Logo_Guidelines.pdf
+              - listitem [ref=e1094]:
+                - link "eSewa Official Logo" [ref=e1095] [cursor=pointer]:
+                  - /url: https://cdn.esewa.com.np/ui/notice/eSewa_Official_Logo_Pack.zip
+              - listitem [ref=e1096]:
+                - link "FAQ's" [ref=e1097] [cursor=pointer]:
+                  - /url: https://blog.esewa.com.np/faq
+              - listitem [ref=e1098]:
+                - link "Contact us" [ref=e1099] [cursor=pointer]:
+                  - /url: https://blog.esewa.com.np/contact-us
+              - listitem:
+                - link:
+                  - /url: https://blog.esewa.com.np/contact-us
+            - button "Become a merchant" [ref=e1100] [cursor=pointer]
+        - generic [ref=e1105]:
+          - generic [ref=e1106]:
+            - heading [level=5] [ref=e1107]
+            - list [ref=e1108]:
+              - listitem [ref=e1109]
+              - listitem [ref=e1110]
+              - listitem [ref=e1111]:
+                - link:
+                  - /url: https://connect2.amtivo.com/cert/amtivocert10001.asp?c=620701&v=UH807048BVJB&e=79334
+          - generic [ref=e1112]:
+            - heading "Download Mobile Apps" [level=5] [ref=e1113]
+            - list [ref=e1114]:
+              - listitem [ref=e1115]:
+                - link "Play Store" [ref=e1116] [cursor=pointer]:
+                  - /url: https://play.google.com/store/apps/details?id=com.f1soft.esewa
+                  - img
+              - listitem [ref=e1117]:
+                - link "App Store" [ref=e1118] [cursor=pointer]:
+                  - /url: https://itunes.apple.com/np/app/esewa/id614370939?mt=8
+                  - img
+          - generic [ref=e1119]:
+            - heading [level=5] [ref=e1120]
+            - list [ref=e1121]:
+              - listitem [ref=e1122]:
+                - link [ref=e1123] [cursor=pointer]:
+                  - /url: http://www.f1soft.com
+        - generic [ref=e1126]:
+          - generic [ref=e1127]: © 2009-2026 eSewa. All Rights Reserved.
+          - generic [ref=e1129]:
+            - generic [ref=e1130]: Keep in touch
+            - list [ref=e1131]:
+              - listitem [ref=e1132]:
+                - link "" [ref=e1133] [cursor=pointer]:
+                  - /url: https://www.facebook.com/esewa/
+              - listitem [ref=e1134]:
+                - link "" [ref=e1135] [cursor=pointer]:
+                  - /url: https://twitter.com/esewanepal
+              - listitem [ref=e1136]:
+                - link "" [ref=e1137] [cursor=pointer]:
+                  - /url: https://www.youtube.com/c/eSewaFonepay?sub_confirmation=1
+              - listitem [ref=e1138]:
+                - link "" [ref=e1139] [cursor=pointer]:
+                  - /url: https://www.linkedin.com/company-beta/2832447/
+      - paragraph
+      - paragraph
+```

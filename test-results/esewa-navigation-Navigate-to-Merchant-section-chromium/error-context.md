@@ -1,0 +1,837 @@
+# Instructions
+
+- Following Playwright test failed.
+- Explain why, be concise, respect Playwright best practices.
+- Provide a snippet of code with the fix, if possible.
+
+# Test info
+
+- Name: esewa-navigation.spec.ts >> Navigate to Merchant section
+- Location: tests/esewa-navigation.spec.ts:24:5
+
+# Error details
+
+```
+Test timeout of 60000ms exceeded.
+```
+
+# Page snapshot
+
+```yaml
+- generic [active] [ref=e1]:
+  - generic [ref=e3] [cursor=pointer]:
+    - generic [ref=e4]: 
+    - generic [ref=e1141]:
+      - heading "Toll Free Number" [level=6] [ref=e1142]
+      - list [ref=e1143]:
+        - listitem [ref=e1144]:
+          - 'link "NTC: 1660-01-02121" [ref=e1145]':
+            - /url: "tel:1660-01-02121 "
+            - strong [ref=e1146]: "NTC:"
+            - text: 1660-01-02121
+      - list [ref=e1147]:
+        - listitem [ref=e1148]:
+          - link "Ncell 1810-21-02121" [ref=e1149]:
+            - /url: "tel:1810-21-02121 "
+            - strong [ref=e1150]: Ncell
+            - text: 1810-21-02121
+      - heading "Hotline Number" [level=6] [ref=e1151]
+      - list [ref=e1152]:
+        - listitem [ref=e1153]: 01-5970121
+  - banner [ref=e5]:
+    - generic [ref=e7]:
+      - link "eSewa" [ref=e9] [cursor=pointer]:
+        - /url: "#/home"
+        - img "eSewa" [ref=e10]
+      - generic [ref=e17]:
+        - textbox "Search services/merchant by tags (e.g. adsl)" [ref=e18]: 
+        - button "" [ref=e19] [cursor=pointer]:
+          - generic [ref=e20]: 
+      - list [ref=e23]:
+        - form [ref=e25]:
+          - generic [ref=e27]:
+            - generic [ref=e28]:
+              - generic [ref=e29]: 
+              - textbox "eSewa ID" [ref=e30]
+            - generic [ref=e31]:
+              - generic [ref=e32]: 
+              - textbox "Password" [ref=e33]
+              - link "Forgot Password ?" [ref=e34] [cursor=pointer]:
+                - /url: "#/forgot_password"
+            - generic [ref=e35]:
+              - button "Login" [disabled] [ref=e36]
+              - button "Register" [ref=e37] [cursor=pointer]
+  - list [ref=e41]:
+    - link "Top Up" [ref=e42] [cursor=pointer]:
+      - /url: "#"
+    - link "Airlines" [ref=e43] [cursor=pointer]:
+      - /url: "#"
+    - link "Internet Bill" [ref=e44] [cursor=pointer]:
+      - /url: "#"
+    - link "Load Fund" [ref=e45] [cursor=pointer]:
+      - /url: https://blog.esewa.com.np/banks
+  - generic [ref=e50]:
+    - list [ref=e54]:
+      - listitem [ref=e55]:
+        - link " Topup & Recharge" [ref=e56] [cursor=pointer]:
+          - /url: "#/products/Topup%20%26%20Recharge/7"
+      - listitem [ref=e57]:
+        - link " Electricity & Water" [ref=e58] [cursor=pointer]:
+          - /url: "#/products/Electricity%20%26%20Water/29"
+      - listitem [ref=e59]:
+        - link " TV Payment" [ref=e60] [cursor=pointer]:
+          - /url: "#/products/TV%20Payment/33"
+      - listitem [ref=e61]:
+        - link " Bus Ticket/Tours and Travels" [ref=e62] [cursor=pointer]:
+          - /url: "#/products/Bus%20Ticket~2FTours%20and%20Travels/8"
+      - listitem [ref=e63]:
+        - link " Education Payment" [ref=e64] [cursor=pointer]:
+          - /url: "#/products/Education%20Payment/1"
+      - listitem [ref=e65]:
+        - link " DOFE/Insurance Payment" [ref=e66] [cursor=pointer]:
+          - /url: "#/products/DOFE~2FInsurance%20Payment/34"
+      - listitem [ref=e67]:
+        - link " Financial Services" [ref=e68] [cursor=pointer]:
+          - /url: "#/products/Financial%20Services/2"
+      - listitem [ref=e69]:
+        - link " Movies & Entertainment" [ref=e70] [cursor=pointer]:
+          - /url: "#/products/Movies%20%26%20Entertainment/39"
+    - generic [ref=e76]:
+      - img "..." [ref=e77]
+      - link:
+        - /url: https://blog.esewa.com.np/international-payment-in-nepal/
+  - main [ref=e81]:
+    - generic [ref=e86]:
+      - generic [ref=e87]:
+        - generic [ref=e89]:
+          - heading "Featured Services" [level=4] [ref=e91]
+          - button "View more" [ref=e93] [cursor=pointer]
+        - generic [ref=e95]:
+          - generic [ref=e97]:
+            - figure "Business QR Request" [ref=e99] [cursor=pointer]:
+              - generic [ref=e100]: Request QR
+              - heading "Business QR Request" [level=5] [ref=e105]
+              - button "View Details" [ref=e106]
+            - figure "eSpeaker Request" [ref=e108] [cursor=pointer]:
+              - generic [ref=e109]: eSpeaker Request
+              - heading "eSpeaker Request" [level=5] [ref=e114]
+              - button "View Details" [ref=e115]
+            - figure "3 Years LL.B. 2082/83" [ref=e117] [cursor=pointer]:
+              - generic [ref=e118]: Admission and Registration
+              - img [ref=e121]
+              - heading "3 Years LL.B. 2082/83" [level=5] [ref=e124]
+              - button "View Details" [ref=e125]
+            - figure "NEB Payment" [ref=e127] [cursor=pointer]:
+              - generic [ref=e128]: NEB
+              - img [ref=e131]
+              - heading "NEB Payment" [level=5] [ref=e134]
+              - button "View Details" [ref=e135]
+            - figure "Nepal Beema Pradhikaran - Agent/Surveyor License Renew" [ref=e137] [cursor=pointer]:
+              - generic [ref=e138]: Renew
+              - heading "Nepal Beema Pradhikaran - Agent/Surveyor License Renew" [level=5] [ref=e143]
+              - button "View Details" [ref=e144]
+            - figure "Trade Management System (TMS)" [ref=e146] [cursor=pointer]:
+              - generic [ref=e147]: TMS
+              - heading "Trade Management System (TMS)" [level=5] [ref=e152]
+              - button "View Details" [ref=e153]
+            - figure "Alfa Health Care & Diagnostic Center" [ref=e155] [cursor=pointer]:
+              - generic [ref=e156]: Up to 50% Cashback
+              - heading "Alfa Health Care & Diagnostic Center" [level=5] [ref=e161]
+              - button "View Details" [ref=e162]
+            - figure "RhinoPass" [ref=e164] [cursor=pointer]:
+              - generic [ref=e165]: Food Ordering
+              - generic [ref=e167]:
+                - img
+              - heading "RhinoPass" [level=5] [ref=e170]
+              - button "View Details" [ref=e171]
+            - figure "Naasa Securities Company Limited" [ref=e173] [cursor=pointer]:
+              - generic [ref=e174]: Meroshare
+              - heading "Naasa Securities Company Limited" [level=5] [ref=e179]
+              - button "View Details" [ref=e180]
+            - figure "Nepal Airlines - International Flight" [ref=e182] [cursor=pointer]:
+              - generic [ref=e184]:
+                - img
+              - heading "Nepal Airlines - International Flight" [level=5] [ref=e187]
+              - button "View Details" [ref=e188]
+            - figure "Auditors Association of Nepal(AUDAN)" [ref=e190] [cursor=pointer]:
+              - generic [ref=e191]: Renew
+              - heading "Auditors Association of Nepal(AUDAN)" [level=5] [ref=e196]
+              - button "View Details" [ref=e197]
+          - generic:
+            - text: 
+            - button "" [ref=e198] [cursor=pointer]
+      - generic [ref=e199]:
+        - generic [ref=e201]:
+          - heading "Merchant Spotlight" [level=4] [ref=e203]
+          - button "View more" [ref=e205] [cursor=pointer]
+        - generic [ref=e207]:
+          - generic [ref=e209]:
+            - figure "Colour Nepal" [ref=e211] [cursor=pointer]:
+              - generic [ref=e212]: 10% Discount
+              - generic [ref=e214]:
+                - img
+              - heading "Colour Nepal" [level=5] [ref=e217]
+              - button "View Details" [ref=e218]
+            - figure "Eglines Store" [ref=e220] [cursor=pointer]:
+              - generic [ref=e221]: 10% Discount
+              - generic [ref=e223]:
+                - img
+              - heading "Eglines Store" [level=5] [ref=e226]
+              - button "View Details" [ref=e227]
+            - figure "Tsarmoire Online Store Pvt. Ltd." [ref=e229] [cursor=pointer]:
+              - generic [ref=e230]: 10% Discount
+              - generic [ref=e232]:
+                - img
+              - heading "Tsarmoire Online Store Pvt. Ltd." [level=5] [ref=e235]
+              - button "View Details" [ref=e236]
+            - figure "Oometo Partners Private Limited" [ref=e238] [cursor=pointer]:
+              - generic [ref=e239]: 3% Discount
+              - generic [ref=e241]:
+                - img
+              - heading "Oometo Partners Private Limited" [level=5] [ref=e244]
+              - button "View Details" [ref=e245]
+            - figure "Aartha A.I. Soft Pvt. Ltd" [ref=e247] [cursor=pointer]:
+              - generic [ref=e248]: 50% Discount
+              - generic [ref=e250]:
+                - img
+              - heading "Aartha A.I. Soft Pvt. Ltd" [level=5] [ref=e253]
+              - button "View Details" [ref=e254]
+            - figure "Bungee Pokhara" [ref=e256] [cursor=pointer]:
+              - generic [ref=e257]: Rs.1000 Cashback
+              - heading "Bungee Pokhara" [level=5] [ref=e262]
+              - button "View Details" [ref=e263]
+          - generic:
+            - text: 
+            - button "" [ref=e264] [cursor=pointer]
+      - generic [ref=e265]:
+        - generic [ref=e267]:
+          - heading "Voting & Events" [level=4] [ref=e269]
+          - button "View more" [ref=e271] [cursor=pointer]
+        - generic [ref=e273]:
+          - generic [ref=e275]:
+            - figure "MANHUNT INT'L NEPAL 2026 (15TH EDITION)" [ref=e277] [cursor=pointer]:
+              - generic [ref=e278]: Voting
+              - heading "MANHUNT INT'L NEPAL 2026 (15TH EDITION)" [level=5] [ref=e283]
+              - button "View Details" [ref=e284]
+            - figure "DSA STAR-2026 (SEASON-19)" [ref=e286] [cursor=pointer]:
+              - generic [ref=e287]: Voting
+              - heading "DSA STAR-2026 (SEASON-19)" [level=5] [ref=e292]
+              - button "View Details" [ref=e293]
+            - figure "Gauriganga Municipality Dance Championship Season 1" [ref=e295] [cursor=pointer]:
+              - generic [ref=e296]: Voting
+              - heading "Gauriganga Municipality Dance Championship Season 1" [level=5] [ref=e301]
+              - button "View Details" [ref=e302]
+            - figure "Aristo SEE IDOL-5" [ref=e304] [cursor=pointer]:
+              - generic [ref=e305]: Voting
+              - heading "Aristo SEE IDOL-5" [level=5] [ref=e310]
+              - button "View Details" [ref=e311]
+            - figure "Kids Dance Championship - 2026" [ref=e313] [cursor=pointer]:
+              - generic [ref=e314]: Registration
+              - heading "Kids Dance Championship - 2026" [level=5] [ref=e319]
+              - button "View Details" [ref=e320]
+            - figure "Nritya Sangram" [ref=e322] [cursor=pointer]:
+              - generic [ref=e323]: Registration
+              - heading "Nritya Sangram" [level=5] [ref=e328]
+              - button "View Details" [ref=e329]
+            - figure "SEE Dance Championship- 2026" [ref=e331] [cursor=pointer]:
+              - generic [ref=e332]: Registration
+              - heading "SEE Dance Championship- 2026" [level=5] [ref=e337]
+              - button "View Details" [ref=e338]
+            - figure "Sudur Karnali Singing & Dancing Star 2026" [ref=e340] [cursor=pointer]:
+              - generic [ref=e341]: Registration
+              - heading "Sudur Karnali Singing & Dancing Star 2026" [level=5] [ref=e346]
+              - button "View Details" [ref=e347]
+          - generic:
+            - text: 
+            - button "" [ref=e348] [cursor=pointer]
+      - generic [ref=e349]:
+        - generic [ref=e351]:
+          - heading "Insurance" [level=4] [ref=e353]
+          - button "View more" [ref=e355] [cursor=pointer]
+        - generic [ref=e357]:
+          - generic [ref=e359]:
+            - figure "eSewa Care" [ref=e361] [cursor=pointer]:
+              - heading "eSewa Care" [level=5] [ref=e366]
+              - button "View Details" [ref=e367]
+            - figure "Nepal Life Insurance Co. Ltd." [ref=e369] [cursor=pointer]:
+              - heading "Nepal Life Insurance Co. Ltd." [level=5] [ref=e374]
+              - button "View Details" [ref=e375]
+            - figure "National Life Insurance Co. Ltd." [ref=e377] [cursor=pointer]:
+              - heading "National Life Insurance Co. Ltd." [level=5] [ref=e382]
+              - button "View Details" [ref=e383]
+            - figure "MetLife" [ref=e385] [cursor=pointer]:
+              - heading "MetLife" [level=5] [ref=e390]
+              - button "View Details" [ref=e391]
+            - figure "Asian Life Insurance Co. Ltd." [ref=e393] [cursor=pointer]:
+              - heading "Asian Life Insurance Co. Ltd." [level=5] [ref=e398]
+              - button "View Details" [ref=e399]
+            - figure "Sanima Reliance Life Insurance Ltd." [ref=e401] [cursor=pointer]:
+              - heading "Sanima Reliance Life Insurance Ltd." [level=5] [ref=e406]
+              - button "View Details" [ref=e407]
+            - figure "SuryaJyoti Life Insurance Co. Ltd." [ref=e409] [cursor=pointer]:
+              - heading "SuryaJyoti Life Insurance Co. Ltd." [level=5] [ref=e414]
+              - button "View Details" [ref=e415]
+            - figure "Prabhu Mahalaxmi Life Insurance Ltd" [ref=e417] [cursor=pointer]:
+              - heading "Prabhu Mahalaxmi Life Insurance Ltd" [level=5] [ref=e422]
+              - button "View Details" [ref=e423]
+            - figure "Sun Nepal Life - Premium Collection" [ref=e425] [cursor=pointer]:
+              - heading "Sun Nepal Life - Premium Collection" [level=5] [ref=e430]
+              - button "View Details" [ref=e431]
+            - figure "Citizen Life Insurance Co. Ltd." [ref=e433] [cursor=pointer]:
+              - heading "Citizen Life Insurance Co. Ltd." [level=5] [ref=e438]
+              - button "View Details" [ref=e439]
+            - figure "IME Life Insurance" [ref=e441] [cursor=pointer]:
+              - heading "IME Life Insurance" [level=5] [ref=e446]
+              - button "View Details" [ref=e447]
+            - figure "Reliable Nepal Life Insurance Ltd." [ref=e449] [cursor=pointer]:
+              - heading "Reliable Nepal Life Insurance Ltd." [level=5] [ref=e454]
+              - button "View Details" [ref=e455]
+            - figure "Himalayan Life Insurance" [ref=e457] [cursor=pointer]:
+              - heading "Himalayan Life Insurance" [level=5] [ref=e462]
+              - button "View Details" [ref=e463]
+            - figure "Rastriya Jeevan Beema Company" [ref=e465] [cursor=pointer]:
+              - heading "Rastriya Jeevan Beema Company" [level=5] [ref=e470]
+              - button "View Details" [ref=e471]
+            - figure "Liberty Micro Life Insurance" [ref=e473] [cursor=pointer]:
+              - heading "Liberty Micro Life Insurance" [level=5] [ref=e478]
+              - button "View Details" [ref=e479]
+            - figure "Crest Micro Life Insurance" [ref=e481] [cursor=pointer]:
+              - heading "Crest Micro Life Insurance" [level=5] [ref=e486]
+              - button "View Details" [ref=e487]
+          - generic:
+            - text: 
+            - button "" [ref=e488] [cursor=pointer]
+      - generic [ref=e489]:
+        - generic [ref=e491]:
+          - heading "Antivirus" [level=4] [ref=e493]
+          - button "View more" [ref=e495] [cursor=pointer]
+        - generic [ref=e497]:
+          - generic [ref=e499]:
+            - figure "Kaspersky Antivirus" [ref=e501] [cursor=pointer]:
+              - generic [ref=e502]: 10% Cashback
+              - heading "Kaspersky Antivirus" [level=5] [ref=e507]
+              - button "View Details" [ref=e508]
+            - figure "eset Antivirus" [ref=e510] [cursor=pointer]:
+              - generic [ref=e511]: 10% Cashback
+              - heading "eset Antivirus" [level=5] [ref=e516]
+              - button "View Details" [ref=e517]
+            - figure "Bitdefender" [ref=e519] [cursor=pointer]:
+              - generic [ref=e520]: 10% Cash Back
+              - heading "Bitdefender" [level=5] [ref=e525]
+              - button "View Details" [ref=e526]
+            - figure "MSecurity" [ref=e528] [cursor=pointer]:
+              - generic [ref=e529]: 10% Cashback
+              - heading "MSecurity" [level=5] [ref=e534]
+              - button "View Details" [ref=e535]
+            - figure "Dr. Web Antivirus" [ref=e537] [cursor=pointer]:
+              - generic [ref=e538]: 10% Cashback
+              - heading "Dr. Web Antivirus" [level=5] [ref=e543]
+              - button "View Details" [ref=e544]
+            - figure "eScan Antivirus" [ref=e546] [cursor=pointer]:
+              - generic [ref=e547]: 10% Cashback
+              - heading "eScan Antivirus" [level=5] [ref=e552]
+              - button "View Details" [ref=e553]
+          - generic:
+            - text: 
+            - button "" [ref=e554] [cursor=pointer]
+      - generic [ref=e555]:
+        - generic [ref=e557]:
+          - heading "eCommerce" [level=4] [ref=e559]
+          - button "View more" [ref=e561] [cursor=pointer]
+        - generic [ref=e563]:
+          - generic [ref=e565]:
+            - figure "Bhoj Deal" [ref=e567] [cursor=pointer]:
+              - generic [ref=e568]: Food Delivery
+              - generic [ref=e570]:
+                - img
+              - heading "Bhoj Deal" [level=5] [ref=e573]
+              - button "View Details" [ref=e574]
+            - figure "Ultima Lifestyle" [ref=e576] [cursor=pointer]:
+              - generic [ref=e577]: Electronic
+              - heading "Ultima Lifestyle" [level=5] [ref=e582]
+              - button "View Details" [ref=e583]
+            - figure "AGM Web Hosting" [ref=e585] [cursor=pointer]:
+              - generic [ref=e586]: Web Hosting
+              - generic [ref=e588]:
+                - img
+              - heading "AGM Web Hosting" [level=5] [ref=e591]
+              - button "View Details" [ref=e592]
+            - figure "MaxBass" [ref=e594] [cursor=pointer]:
+              - generic [ref=e595]: eCommerce
+              - generic [ref=e597]:
+                - img
+              - heading "MaxBass" [level=5] [ref=e600]
+              - button "View Details" [ref=e601]
+            - figure "Cowmandu" [ref=e603] [cursor=pointer]:
+              - generic [ref=e604]: Dairy Products
+              - heading "Cowmandu" [level=5] [ref=e609]
+              - button "View Details" [ref=e610]
+            - figure "Kachhuwa" [ref=e612] [cursor=pointer]:
+              - generic [ref=e613]: eCommerce
+              - generic [ref=e615]:
+                - img
+              - heading "Kachhuwa" [level=5] [ref=e618]
+              - button "View Details" [ref=e619]
+            - figure "Foodganj" [ref=e621] [cursor=pointer]:
+              - generic [ref=e622]: Food Delivery
+              - generic [ref=e624]:
+                - img
+              - heading "Foodganj" [level=5] [ref=e627]
+              - button "View Details" [ref=e628]
+            - figure "Cheers Online" [ref=e630] [cursor=pointer]:
+              - generic [ref=e631]: Groceries/Liquors
+              - generic [ref=e633]:
+                - img
+              - heading "Cheers Online" [level=5] [ref=e636]
+              - button "View Details" [ref=e637]
+            - figure "Natureherbs" [ref=e639] [cursor=pointer]:
+              - generic [ref=e640]: Herbal Products
+              - generic [ref=e642]:
+                - img
+              - heading "Natureherbs" [level=5] [ref=e645]
+              - button "View Details" [ref=e646]
+            - figure "Thulo" [ref=e648] [cursor=pointer]:
+              - generic [ref=e649]: eCommerce
+              - generic [ref=e651]:
+                - img
+              - heading "Thulo" [level=5] [ref=e654]
+              - button "View Details" [ref=e655]
+            - figure "Giftmandu" [ref=e657] [cursor=pointer]:
+              - generic [ref=e658]: Online Gift Shop
+              - generic [ref=e660]:
+                - img
+              - heading "Giftmandu" [level=5] [ref=e663]
+              - button "View Details" [ref=e664]
+            - figure "Thuprai" [ref=e666] [cursor=pointer]:
+              - generic [ref=e667]: eBook Collection
+              - generic [ref=e669]:
+                - img
+              - heading "Thuprai" [level=5] [ref=e672]
+              - button "View Details" [ref=e673]
+            - figure "Books Mandala Pvt. Ltd." [ref=e675] [cursor=pointer]:
+              - generic [ref=e676]: Online Book Store
+              - generic [ref=e678]:
+                - img
+              - heading "Books Mandala Pvt. Ltd." [level=5] [ref=e681]
+              - button "View Details" [ref=e682]
+            - figure "Blanxer" [ref=e684] [cursor=pointer]:
+              - generic [ref=e685]: Business Automation
+              - generic [ref=e687]:
+                - img
+              - heading "Blanxer" [level=5] [ref=e690]
+              - button "View Details" [ref=e691]
+            - figure "CG Digital" [ref=e693] [cursor=pointer]:
+              - generic [ref=e694]: Electronic eCommerce
+              - generic [ref=e696]:
+                - img
+              - heading "CG Digital" [level=5] [ref=e699]
+              - button "View Details" [ref=e700]
+            - figure "Aqua World" [ref=e702] [cursor=pointer]:
+              - generic [ref=e703]: Online Water Supplier
+              - generic [ref=e705]:
+                - img
+              - heading "Aqua World" [level=5] [ref=e708]
+              - button "View Details" [ref=e709]
+            - figure "OK Dam" [ref=e711] [cursor=pointer]:
+              - generic [ref=e712]: eCommerce
+              - generic [ref=e714]:
+                - img
+              - heading "OK Dam" [level=5] [ref=e717]
+              - button "View Details" [ref=e718]
+            - figure "WL Food" [ref=e720] [cursor=pointer]:
+              - generic [ref=e721]: Food Delivery
+              - generic [ref=e723]:
+                - img
+              - heading "WL Food" [level=5] [ref=e726]
+              - button "View Details" [ref=e727]
+            - figure "Smart Doko" [ref=e729] [cursor=pointer]:
+              - generic [ref=e730]: Online Shopping
+              - generic [ref=e732]:
+                - img
+              - heading "Smart Doko" [level=5] [ref=e735]
+              - button "View Details" [ref=e736]
+            - figure "SY Bazzar" [ref=e738] [cursor=pointer]:
+              - generic [ref=e739]: eCommerce
+              - generic [ref=e741]:
+                - img
+              - heading "SY Bazzar" [level=5] [ref=e744]
+              - button "View Details" [ref=e745]
+            - figure "Sherpa Outdoor" [ref=e747] [cursor=pointer]:
+              - generic [ref=e748]: Fashion and Lifestyle
+              - generic [ref=e750]:
+                - img
+              - heading "Sherpa Outdoor" [level=5] [ref=e753]
+              - button "View Details" [ref=e754]
+            - figure "Aadhya Fashion" [ref=e756] [cursor=pointer]:
+              - generic [ref=e757]: Online Boutique
+              - generic [ref=e759]:
+                - img
+              - heading "Aadhya Fashion" [level=5] [ref=e762]
+              - button "View Details" [ref=e763]
+            - figure "Hamro Shringar" [ref=e765] [cursor=pointer]:
+              - generic [ref=e766]: Beauty Products
+              - generic [ref=e768]:
+                - img
+              - heading "Hamro Shringar" [level=5] [ref=e771]
+              - button "View Details" [ref=e772]
+            - figure "Nepal Buying" [ref=e774] [cursor=pointer]:
+              - generic [ref=e775]: eCommerce
+              - generic [ref=e777]:
+                - img
+              - heading "Nepal Buying" [level=5] [ref=e780]
+              - button "View Details" [ref=e781]
+            - figure "Stop Grab" [ref=e783] [cursor=pointer]:
+              - generic [ref=e784]: eCommerce
+              - generic [ref=e786]:
+                - img
+              - heading "Stop Grab" [level=5] [ref=e789]
+              - button "View Details" [ref=e790]
+            - figure "Navigate Cloth" [ref=e792] [cursor=pointer]:
+              - generic [ref=e793]: Fashion and Lifestyle
+              - generic [ref=e795]:
+                - img
+              - heading "Navigate Cloth" [level=5] [ref=e798]
+              - button "View Details" [ref=e799]
+            - figure "Washmandu Nepal" [ref=e801] [cursor=pointer]:
+              - generic [ref=e802]: Laundry Service
+              - heading "Washmandu Nepal" [level=5] [ref=e807]
+              - button "View Details" [ref=e808]
+            - figure "Celebsathi" [ref=e810] [cursor=pointer]:
+              - generic [ref=e811]: Connecting People
+              - generic [ref=e813]:
+                - img
+              - heading "Celebsathi" [level=5] [ref=e816]
+              - button "View Details" [ref=e817]
+            - figure "Farm Shop Nepal" [ref=e819] [cursor=pointer]:
+              - generic [ref=e820]: Fresh Produce
+              - generic [ref=e822]:
+                - img
+              - heading "Farm Shop Nepal" [level=5] [ref=e825]
+              - button "View Details" [ref=e826]
+            - figure "Blush Beauty" [ref=e828] [cursor=pointer]:
+              - generic [ref=e829]: Cosmetic & Skincare
+              - heading "Blush Beauty" [level=5] [ref=e834]
+              - button "View Details" [ref=e835]
+            - figure "Nagmani International" [ref=e837] [cursor=pointer]:
+              - generic [ref=e838]: IT Hardware Distributor
+              - generic [ref=e840]:
+                - img
+              - heading "Nagmani International" [level=5] [ref=e843]
+              - button "View Details" [ref=e844]
+            - figure "ITTI Computer World" [ref=e846] [cursor=pointer]:
+              - generic [ref=e847]: Online Laptop Store
+              - generic [ref=e849]:
+                - img
+              - heading "ITTI Computer World" [level=5] [ref=e852]
+              - button "View Details" [ref=e853]
+          - generic:
+            - text: 
+            - button "" [ref=e854] [cursor=pointer]
+  - generic [ref=e856]:
+    - generic [ref=e860]:
+      - heading "Partner Banks" [level=4] [ref=e862]
+      - generic [ref=e867]:
+        - link [ref=e869] [cursor=pointer]:
+          - /url: "#"
+          - img [ref=e870]
+        - link [ref=e872] [cursor=pointer]:
+          - /url: https://bestfinance.com.np/
+          - img [ref=e873]
+        - link [ref=e875] [cursor=pointer]:
+          - /url: http://www.citizensbank.com.np/
+          - img [ref=e876]
+        - link [ref=e878] [cursor=pointer]:
+          - /url: http://www.everestbankltd.com
+          - img [ref=e879]
+        - link [ref=e881] [cursor=pointer]:
+          - /url: http://www.edb.com.np
+          - img [ref=e882]
+        - link [ref=e884] [cursor=pointer]:
+          - /url: http://www.garimabank.com.np
+          - img [ref=e885]
+        - link [ref=e887] [cursor=pointer]:
+          - /url: http://www.globalimebank.com
+          - img [ref=e888]
+        - link [ref=e890] [cursor=pointer]:
+          - /url: https://greenbank.com.np
+          - img [ref=e891]
+        - link [ref=e893] [cursor=pointer]:
+          - /url: https://www.gurkhasfinance.com.np
+          - img [ref=e894]
+        - link [ref=e896] [cursor=pointer]:
+          - /url: https://www.icfcbank.com
+          - img [ref=e897]
+        - link [ref=e899] [cursor=pointer]:
+          - /url: http://jbbl.com.np/
+          - img [ref=e900]
+        - link [ref=e902] [cursor=pointer]:
+          - /url: https://www.kamanasewabank.com
+          - img [ref=e903]
+        - link [ref=e905] [cursor=pointer]:
+          - /url: https://kdblnepal.com
+          - img [ref=e906]
+        - link [ref=e908] [cursor=pointer]:
+          - /url: https://www.kumaribank.com/ibn/login.php
+          - img [ref=e909]
+        - link [ref=e911] [cursor=pointer]:
+          - /url: https://www.lumbinibikasbank.com
+          - img [ref=e912]
+        - link [ref=e914] [cursor=pointer]:
+          - /url: http://www.machbank.com
+          - img [ref=e915]
+        - link [ref=e917] [cursor=pointer]:
+          - /url: https://manjushreefinance.com.np
+          - img [ref=e918]
+        - link [ref=e920] [cursor=pointer]:
+          - /url: http://www.mahalaxmibank.com/
+          - img [ref=e921]
+        - link [ref=e923] [cursor=pointer]:
+          - /url: http://www.muktinathbank.com.np/
+          - img [ref=e924]
+        - link [ref=e926] [cursor=pointer]:
+          - /url: http://www.nabilbank.com
+          - img [ref=e927]
+        - link [ref=e929] [cursor=pointer]:
+          - /url: "#"
+          - img [ref=e930]
+        - link [ref=e932] [cursor=pointer]:
+          - /url: "#"
+          - img [ref=e933]
+        - link [ref=e935] [cursor=pointer]:
+          - /url: https://www.nicasiabank.com
+          - img [ref=e936]
+        - link [ref=e938] [cursor=pointer]:
+          - /url: http://www.nmb.com.np
+          - img [ref=e939]
+        - link [ref=e941] [cursor=pointer]:
+          - /url: "#"
+          - img [ref=e942]
+        - link [ref=e944] [cursor=pointer]:
+          - /url: https://www.pokharafinance.com.np
+          - img [ref=e945]
+        - link [ref=e947] [cursor=pointer]:
+          - /url: http://www.prabhubank.com
+          - img [ref=e948]
+        - link [ref=e950] [cursor=pointer]:
+          - /url: http://www.primebank.com.np/
+          - img [ref=e951]
+        - link [ref=e953] [cursor=pointer]:
+          - /url: "#"
+          - img [ref=e954]
+        - link [ref=e956] [cursor=pointer]:
+          - /url: http://skdbl.com.np
+          - img [ref=e957]
+        - link [ref=e959] [cursor=pointer]:
+          - /url: https://www.sanimabank.com/
+          - img [ref=e960]
+        - link [ref=e962] [cursor=pointer]:
+          - /url: http://www.shangrilabank.com
+          - img [ref=e963]
+        - link [ref=e965] [cursor=pointer]:
+          - /url: http://www.srdb.com.np/content/pages.php?link=E-Banking_services
+          - img [ref=e966]
+        - link [ref=e968] [cursor=pointer]:
+          - /url: http://www.sindhubank.com.np
+          - img [ref=e969]
+        - link [ref=e971] [cursor=pointer]:
+          - /url: http://www.siddharthabank.com/
+          - img [ref=e972]
+        - link [ref=e974] [cursor=pointer]:
+          - /url: https://www.sunrisebank.com.np/ibn/login.php
+          - img [ref=e975]
+        - link [ref=e977] [cursor=pointer]:
+          - /url: https://multipurposefinance.com
+          - img [ref=e978]
+        - link [ref=e980] [cursor=pointer]:
+          - /url: https://nepalfinancelimited.com.np
+          - img [ref=e981]
+        - link [ref=e983] [cursor=pointer]:
+          - /url: https://www.miteribank.com.np
+          - img [ref=e984]
+        - link [ref=e986] [cursor=pointer]:
+          - /url: https://www.pfltd.com.np
+          - img [ref=e987]
+        - link [ref=e989] [cursor=pointer]:
+          - /url: https://reliancenepal.com.np
+          - img [ref=e990]
+        - link [ref=e992] [cursor=pointer]:
+          - /url: https://centralfinance.com.np
+          - img [ref=e993]
+        - link [ref=e995] [cursor=pointer]:
+          - /url: https://www.sfcl.com.np
+          - img [ref=e996]
+        - link [ref=e998] [cursor=pointer]:
+          - /url: https://www.shreefinance.com.np
+          - img [ref=e999]
+        - link [ref=e1001] [cursor=pointer]:
+          - /url: https://www.laxmisunrise.com/
+          - img [ref=e1002]
+        - link [ref=e1004] [cursor=pointer]:
+          - /url: https://https://salapabikasbank.com.np/
+          - img [ref=e1005]
+        - link [ref=e1007] [cursor=pointer]:
+          - /url: https://ndbl.com.np/
+          - img [ref=e1008]
+    - contentinfo [ref=e1009]:
+      - generic [ref=e1012]:
+        - generic [ref=e1013]:
+          - img "eSewa" [ref=e1015]
+          - generic [ref=e1016]:
+            - heading "Contact Details" [level=4] [ref=e1017]
+            - list [ref=e1018]:
+              - listitem [ref=e1019]: NTC Toll Free – 16600102121
+              - listitem [ref=e1020]: Ncell Toll Free – 18102102121
+              - listitem [ref=e1021]:
+                - text: "Email :"
+                - link "csd@esewa.com.np" [ref=e1022] [cursor=pointer]:
+                  - /url: "mailto: csd@esewa.com.np"
+              - listitem [ref=e1023]: Grievance Officer
+              - listitem [ref=e1024]: Bijay Rai
+              - listitem [ref=e1025]:
+                - 'link "Contact: +9779801079465" [ref=e1026] [cursor=pointer]':
+                  - /url: tel:9779801079465
+              - listitem [ref=e1027]:
+                - text: "Email :"
+                - link "bijay.rai@esewa.com.np" [ref=e1028] [cursor=pointer]:
+                  - /url: "mailto: om.karki@esewa.com.np"
+              - listitem [ref=e1029]:
+                - link "Gunaso - Nepal Rastra Bank" [ref=e1030] [cursor=pointer]:
+                  - /url: https://gunaso.nrb.org.np/
+        - generic [ref=e1032]:
+          - heading "Policy" [level=4] [ref=e1033]
+          - list [ref=e1034]:
+            - listitem [ref=e1035]:
+              - link "AGM NOTICE" [ref=e1036] [cursor=pointer]:
+                - /url: https://cdn.esewa.com.np/ui/notice/eSewa-AGM-81-82-Notice.pdf
+            - listitem [ref=e1037]:
+              - link "Privacy Policies" [ref=e1038] [cursor=pointer]:
+                - /url: https://blog.esewa.com.np/privacy-policy
+            - listitem [ref=e1039]:
+              - link "Information Security Policy" [ref=e1040] [cursor=pointer]:
+                - /url: https://blog.esewa.com.np/information-security-policy
+            - listitem [ref=e1041]:
+              - link "Terms and conditions" [ref=e1042] [cursor=pointer]:
+                - /url: " https://blog.esewa.com.np/terms-and-conditions"
+            - listitem [ref=e1043]:
+              - link "Report Dispute, Fraud and Misuse" [ref=e1044] [cursor=pointer]:
+                - /url: https://blog.esewa.com.np/report-fraud-and-misuse
+            - listitem [ref=e1045]:
+              - link "Transaction Limits" [ref=e1046] [cursor=pointer]:
+                - /url: http://blog.esewa.com.np/revision-in-transaction-limits/
+        - generic [ref=e1048]:
+          - heading "General" [level=4] [ref=e1049]
+          - list [ref=e1050]:
+            - listitem [ref=e1051]:
+              - link "Getting Started" [ref=e1052] [cursor=pointer]:
+                - /url: "https://blog.esewa.com.np/getting-started "
+            - listitem [ref=e1053]:
+              - link "Security" [ref=e1054] [cursor=pointer]:
+                - /url: https://blog.esewa.com.np/security
+            - listitem [ref=e1055]:
+              - link "SMS Syntax" [ref=e1056] [cursor=pointer]:
+                - /url: https://blog.esewa.com.np/sms-syntax
+            - listitem [ref=e1057]:
+              - link "Reward Points" [ref=e1058] [cursor=pointer]:
+                - /url: https://blog.esewa.com.np/reward-point
+            - listitem [ref=e1059]:
+              - link "Video Tutorials" [ref=e1060] [cursor=pointer]:
+                - /url: https://blog.esewa.com.np/video
+            - listitem [ref=e1061]:
+              - link "eSewa Tariffs" [ref=e1062] [cursor=pointer]:
+                - /url: https://blog.esewa.com.np/esewa-tariffs/
+        - generic [ref=e1064]:
+          - heading "Company" [level=4] [ref=e1065]
+          - list [ref=e1066]:
+            - listitem [ref=e1067]:
+              - link "About us" [ref=e1068] [cursor=pointer]:
+                - /url: https://blog.esewa.com.np/about
+            - listitem [ref=e1069]:
+              - link "Career" [ref=e1070] [cursor=pointer]:
+                - /url: https://career.esewa.com.np/
+            - listitem [ref=e1071]:
+              - link "Blog/News" [ref=e1072] [cursor=pointer]:
+                - /url: https://blog.esewa.com.np/
+            - listitem [ref=e1073]:
+              - link "Report" [ref=e1074] [cursor=pointer]:
+                - /url: javascript:void(0)
+            - listitem [ref=e1075]:
+              - link "Amendment" [ref=e1076] [cursor=pointer]:
+                - /url: javascript:void(0)
+        - generic [ref=e1078]:
+          - heading "Partners" [level=4] [ref=e1079]
+          - list [ref=e1080]:
+            - listitem [ref=e1081]:
+              - link "Banks" [ref=e1082] [cursor=pointer]:
+                - /url: https://blog.esewa.com.np/banks
+            - listitem [ref=e1083]: Western Union
+            - listitem [ref=e1084]:
+              - link "eSewa Authorized Representatives" [ref=e1085] [cursor=pointer]:
+                - /url: https://blog.esewa.com.np/esewa-authorized-representatives/
+        - generic [ref=e1087]:
+          - heading "Help" [level=4] [ref=e1088]
+          - list [ref=e1089]:
+            - listitem [ref=e1090]:
+              - link "Developer's Guide" [ref=e1091] [cursor=pointer]:
+                - /url: https://developer.esewa.com.np
+            - listitem [ref=e1092]:
+              - link "Logo Guidelines" [ref=e1093] [cursor=pointer]:
+                - /url: https://cdn.esewa.com.np/ui/notice/Logo_Guidelines.pdf
+            - listitem [ref=e1094]:
+              - link "eSewa Official Logo" [ref=e1095] [cursor=pointer]:
+                - /url: https://cdn.esewa.com.np/ui/notice/eSewa_Official_Logo_Pack.zip
+            - listitem [ref=e1096]:
+              - link "FAQ's" [ref=e1097] [cursor=pointer]:
+                - /url: https://blog.esewa.com.np/faq
+            - listitem [ref=e1098]:
+              - link "Contact us" [ref=e1099] [cursor=pointer]:
+                - /url: https://blog.esewa.com.np/contact-us
+            - listitem:
+              - link:
+                - /url: https://blog.esewa.com.np/contact-us
+          - button "Become a merchant" [ref=e1100] [cursor=pointer]
+      - generic [ref=e1105]:
+        - generic [ref=e1106]:
+          - heading [level=5] [ref=e1107]
+          - list [ref=e1108]:
+            - listitem [ref=e1109]
+            - listitem [ref=e1110]
+            - listitem [ref=e1111]:
+              - link:
+                - /url: https://connect2.amtivo.com/cert/amtivocert10001.asp?c=620701&v=UH807048BVJB&e=79334
+        - generic [ref=e1112]:
+          - heading "Download Mobile Apps" [level=5] [ref=e1113]
+          - list [ref=e1114]:
+            - listitem [ref=e1115]:
+              - link "Play Store" [ref=e1116] [cursor=pointer]:
+                - /url: https://play.google.com/store/apps/details?id=com.f1soft.esewa
+                - img
+            - listitem [ref=e1117]:
+              - link "App Store" [ref=e1118] [cursor=pointer]:
+                - /url: https://itunes.apple.com/np/app/esewa/id614370939?mt=8
+                - img
+        - generic [ref=e1119]:
+          - heading [level=5] [ref=e1120]
+          - list [ref=e1121]:
+            - listitem [ref=e1122]:
+              - link [ref=e1123] [cursor=pointer]:
+                - /url: http://www.f1soft.com
+      - generic [ref=e1126]:
+        - generic [ref=e1127]: © 2009-2026 eSewa. All Rights Reserved.
+        - generic [ref=e1129]:
+          - generic [ref=e1130]: Keep in touch
+          - list [ref=e1131]:
+            - listitem [ref=e1132]:
+              - link "" [ref=e1133] [cursor=pointer]:
+                - /url: https://www.facebook.com/esewa/
+            - listitem [ref=e1134]:
+              - link "" [ref=e1135] [cursor=pointer]:
+                - /url: https://twitter.com/esewanepal
+            - listitem [ref=e1136]:
+              - link "" [ref=e1137] [cursor=pointer]:
+                - /url: https://www.youtube.com/c/eSewaFonepay?sub_confirmation=1
+            - listitem [ref=e1138]:
+              - link "" [ref=e1139] [cursor=pointer]:
+                - /url: https://www.linkedin.com/company-beta/2832447/
+    - paragraph
+    - paragraph
+```
