@@ -34,7 +34,7 @@ Test timeout of 90000ms exceeded.
           - generic [ref=e27]:
             - generic [ref=e28]:
               - generic [ref=e29]: 
-              - textbox "eSewa ID" [ref=e30]
+              - textbox "eSewa ID" [active] [ref=e30]
             - generic [ref=e31]:
               - generic [ref=e32]: 
               - textbox "Password" [ref=e33]
@@ -80,7 +80,7 @@ Test timeout of 90000ms exceeded.
           - /url: "#/products/Movies%20%26%20Entertainment/39"
     - generic [ref=e76]:
       - img "..." [ref=e77]
-      - link [active]:
+      - link:
         - /url: https://blog.esewa.com.np/international-payment-in-nepal/
   - main [ref=e81]:
     - generic [ref=e86]:
