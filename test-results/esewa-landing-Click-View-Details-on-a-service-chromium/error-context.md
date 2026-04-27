@@ -6,18 +6,13 @@
 
 # Test info
 
-- Name: esewa-navigation.spec.ts >> Navigate to Help or FAQ page
-- Location: tests/esewa-navigation.spec.ts:43:5
+- Name: esewa-landing.spec.ts >> Click View Details on a service
+- Location: tests/esewa-landing.spec.ts:63:5
 
 # Error details
 
 ```
-Error: While the page title 'Frequently Asked Questions (FAQ)' is visible, there are no actual FAQ questions or answers displayed in the screenshot or the accessibility snapshot. The content area below the title contains an image and a 'Related posts' heading, but no specific questions.
-
-expect(received).toBe(expected) // Object.is equality
-
-Expected: true
-Received: false
+Test timeout of 60000ms exceeded.
 ```
 
 # Page snapshot
@@ -767,7 +762,7 @@ Received: false
               - link "eSewa Official Logo" [ref=e1095] [cursor=pointer]:
                 - /url: https://cdn.esewa.com.np/ui/notice/eSewa_Official_Logo_Pack.zip
             - listitem [ref=e1096]:
-              - link "FAQ's" [active] [ref=e1097] [cursor=pointer]:
+              - link "FAQ's" [ref=e1097] [cursor=pointer]:
                 - /url: https://blog.esewa.com.np/faq
             - listitem [ref=e1098]:
               - link "Contact us" [ref=e1099] [cursor=pointer]:
@@ -783,7 +778,7 @@ Received: false
             - listitem [ref=e1109]
             - listitem [ref=e1110]
             - listitem [ref=e1111]:
-              - link [ref=e1141] [cursor=pointer]:
+              - link:
                 - /url: https://connect2.amtivo.com/cert/amtivocert10001.asp?c=620701&v=UH807048BVJB&e=79334
         - generic [ref=e1112]:
           - heading "Download Mobile Apps" [level=5] [ref=e1113]
@@ -791,11 +786,11 @@ Received: false
             - listitem [ref=e1115]:
               - link "Play Store" [ref=e1116] [cursor=pointer]:
                 - /url: https://play.google.com/store/apps/details?id=com.f1soft.esewa
-                - img [ref=e1142]
+                - img
             - listitem [ref=e1117]:
               - link "App Store" [ref=e1118] [cursor=pointer]:
                 - /url: https://itunes.apple.com/np/app/esewa/id614370939?mt=8
-                - img [ref=e1143]
+                - img
         - generic [ref=e1119]:
           - heading [level=5] [ref=e1120]
           - list [ref=e1121]:
@@ -821,110 +816,12 @@ Received: false
                 - /url: https://www.linkedin.com/company-beta/2832447/
     - paragraph
     - paragraph
-```
-
-# Test source
-
-```ts
-  1   | import { test, expect } from "@playwright/test";
-  2   | import { runSteps } from "passmark";
-  3   | 
-  4   | test("Navigate to Services page", async ({ page }) => {
-  5   |   test.setTimeout(60_000);
-  6   |   await runSteps({
-  7   |     page,
-  8   |     userFlow: "Navigate to services",
-  9   |     steps: [
-  10  |       { description: "Navigate to https://esewa.com.np" },
-  11  |       { description: "Find and click Services from the navigation menu" },
-  12  |     ],
-  13  |     assertions: [
-  14  |       { assertion: "Services page is visible" },
-  15  |       { assertion: "List of services is displayed" },
-  16  |       { assertion: "Each service has a title or name" },
-  17  |       { assertion: "Page URL has changed from homepage" },
-  18  |     ],
-  19  |     test,
-  20  |     expect,
-  21  |   });
-  22  | });
-  23  | 
-  24  | test("Navigate to Merchant section", async ({ page }) => {
-  25  |   test.setTimeout(60_000);
-  26  |   await runSteps({
-  27  |     page,
-  28  |     userFlow: "Navigate to merchant section",
-  29  |     steps: [
-  30  |       { description: "Navigate to https://esewa.com.np" },
-  31  |       { description: "Find and click Merchant or Business from navigation" },
-  32  |     ],
-  33  |     assertions: [
-  34  |       { assertion: "Merchant page content is visible" },
-  35  |       { assertion: "Merchant registration or info is present" },
-  36  |       { assertion: "A call to action button is visible" },
-  37  |     ],
-  38  |     test,
-  39  |     expect,
-  40  |   });
-  41  | });
-  42  | 
-  43  | test("Navigate to Help or FAQ page", async ({ page }) => {
-  44  |   test.setTimeout(60_000);
-> 45  |   await runSteps({
-      |   ^ Error: While the page title 'Frequently Asked Questions (FAQ)' is visible, there are no actual FAQ questions or answers displayed in the screenshot or the accessibility snapshot. The content area below the title contains an image and a 'Related posts' heading, but no specific questions.
-  46  |     page,
-  47  |     userFlow: "Navigate to help page",
-  48  |     steps: [
-  49  |       { description: "Navigate to https://esewa.com.np" },
-  50  |       { description: "Find and click Help or FAQ from navigation or footer" },
-  51  |     ],
-  52  |     assertions: [
-  53  |       { assertion: "Help or FAQ page is visible" },
-  54  |       { assertion: "At least one FAQ question is visible" },
-  55  |       { assertion: "Contact support option is visible" },
-  56  |     ],
-  57  |     test,
-  58  |     expect,
-  59  |   });
-  60  | });
-  61  | 
-  62  | test("Navigate to About page", async ({ page }) => {
-  63  |   test.setTimeout(60_000);
-  64  |   await runSteps({
-  65  |     page,
-  66  |     userFlow: "Navigate to about page",
-  67  |     steps: [
-  68  |       { description: "Navigate to https://esewa.com.np" },
-  69  |       { description: "Find and click About Us from navigation or footer" },
-  70  |     ],
-  71  |     assertions: [
-  72  |       { assertion: "About page content is visible" },
-  73  |       { assertion: "Company information is present" },
-  74  |       { assertion: "eSewa mission or vision is mentioned" },
-  75  |     ],
-  76  |     test,
-  77  |     expect,
-  78  |   });
-  79  | });
-  80  | 
-  81  | test("Navigate back to homepage", async ({ page }) => {
-  82  |   test.setTimeout(60_000);
-  83  |   await runSteps({
-  84  |     page,
-  85  |     userFlow: "Navigate back to homepage",
-  86  |     steps: [
-  87  |       { description: "Navigate to https://esewa.com.np" },
-  88  |       { description: "Click on any navigation link to go to inner page" },
-  89  |       { description: "Click on eSewa logo to go back to homepage" },
-  90  |     ],
-  91  |     assertions: [
-  92  |       { assertion: "Homepage is visible again" },
-  93  |       { assertion: "eSewa logo is visible" },
-  94  |       { assertion: "Homepage hero section is visible" },
-  95  |     ],
-  96  |     test,
-  97  |     expect,
-  98  |   });
-  99  | });
-  100 | 
+  - dialog [active] [ref=e1142]:
+    - generic [ref=e1145]:
+      - generic [ref=e1147]:
+        - generic [ref=e1149]:
+          - img "NEB Payment" [ref=e1151]
+          - generic [ref=e1152]: NEB Payment
+        - generic [ref=e1154] [cursor=pointer]:  
+      - paragraph [ref=e1158]: RASTRIYA PARIKSHYA BOARD
 ```
