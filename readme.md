@@ -46,3 +46,11 @@ This suite focuses on public-facing flows and regression scenarios.
 ├── package.json
 └── README.md
 ```
+
+### 🛠 Installation
+
+```bash
+git clone https://github.com/rajeshkhadka200/passmark-test-hack
+cd PASSMARK-TEST-HACK
+npm install
+```
