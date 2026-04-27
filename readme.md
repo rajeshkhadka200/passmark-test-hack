@@ -2,7 +2,7 @@
 
 AI-powered regression testing of Nepal’s leading digital wallet platform using **Passmark** and **Playwright** — with plain English test steps, no selectors, and no page objects.
 
-## 🚀 Project Overview
+## Project Overview
 
 This project was built for the **Breaking Apps Hackathon** by Hashnode + Bug0.
 
@@ -17,7 +17,7 @@ The goal was to test a real-world fintech platform using modern AI-native testin
 
 ---
 
-## 🎯 What Was Tested
+## What Was Tested
 
 This suite focuses on public-facing flows and regression scenarios.
 
@@ -34,7 +34,7 @@ This suite focuses on public-facing flows and regression scenarios.
 
 ---
 
-## 📂 Project Structure
+##  Project Structure
 
 ```bash
 
@@ -47,7 +47,7 @@ This suite focuses on public-facing flows and regression scenarios.
 └── README.md
 ```
 
-### 🛠 Installation
+###  Installation
 
 ```bash
 git clone https://github.com/rajeshkhadka200/passmark-test-hack
