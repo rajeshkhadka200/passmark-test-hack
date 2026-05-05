@@ -6,8 +6,8 @@
 
 # Test info
 
-- Name: esewa-landing.spec.ts >> Click View Details on a service
-- Location: tests/esewa-landing.spec.ts:63:5
+- Name: esewa-landing.spec.ts >> Footer has all important information
+- Location: tests/esewa-landing.spec.ts:85:5
 
 # Error details
 
@@ -18,7 +18,7 @@ Test timeout of 60000ms exceeded.
 # Page snapshot
 
 ```yaml
-- generic [ref=e1]:
+- generic [active] [ref=e1]:
   - generic [ref=e4] [cursor=pointer]: 
   - banner [ref=e5]:
     - generic [ref=e7]:
@@ -769,7 +769,7 @@ Test timeout of 60000ms exceeded.
             - listitem [ref=e1090]
             - listitem [ref=e1091]
             - listitem [ref=e1092]:
-              - link:
+              - link [ref=e1122] [cursor=pointer]:
                 - /url: https://connect2.amtivo.com/cert/amtivocert10001.asp?c=620701&v=UH807048BVJB&e=79334
         - generic [ref=e1093]:
           - heading "Download Mobile Apps" [level=5] [ref=e1094]
@@ -777,11 +777,11 @@ Test timeout of 60000ms exceeded.
             - listitem [ref=e1096]:
               - link "Play Store" [ref=e1097] [cursor=pointer]:
                 - /url: https://play.google.com/store/apps/details?id=com.f1soft.esewa
-                - img
+                - img [ref=e1123]
             - listitem [ref=e1098]:
               - link "App Store" [ref=e1099] [cursor=pointer]:
                 - /url: https://itunes.apple.com/np/app/esewa/id614370939?mt=8
-                - img
+                - img [ref=e1124]
         - generic [ref=e1100]:
           - heading [level=5] [ref=e1101]
           - list [ref=e1102]:
@@ -807,20 +807,4 @@ Test timeout of 60000ms exceeded.
                 - /url: https://www.linkedin.com/company-beta/2832447/
     - paragraph
     - paragraph
-  - dialog [active] [ref=e1123]:
-    - generic [ref=e1126]:
-      - generic [ref=e1128]:
-        - generic [ref=e1130]:
-          - img "Business QR Request" [ref=e1132]
-          - generic [ref=e1133]: Business QR Request
-        - generic [ref=e1135] [cursor=pointer]:  
-      - paragraph [ref=e1139]:
-        - banner [ref=e1140]:
-          - img [ref=e1141]
-        - text: Please enter your detail.
-        - text: You will receive call from our team.
-        - text: "If you have any query, contact :"
-        - text: eSewa Customer Support 1660-01-02121 or
-        - text: write at qr@esewa.com.np
-        - paragraph
 ```

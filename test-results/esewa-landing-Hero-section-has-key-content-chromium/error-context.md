@@ -6,8 +6,8 @@
 
 # Test info
 
-- Name: esewa-landing.spec.ts >> Click View Details on a service
-- Location: tests/esewa-landing.spec.ts:63:5
+- Name: esewa-landing.spec.ts >> Hero section has key content
+- Location: tests/esewa-landing.spec.ts:23:5
 
 # Error details
 
@@ -34,7 +34,7 @@ Test timeout of 60000ms exceeded.
           - generic [ref=e27]:
             - generic [ref=e28]:
               - generic [ref=e29]: 
-              - textbox "eSewa ID" [ref=e30]
+              - textbox "eSewa ID" [active] [ref=e30]
             - generic [ref=e31]:
               - generic [ref=e32]: 
               - textbox "Password" [ref=e33]
@@ -807,20 +807,4 @@ Test timeout of 60000ms exceeded.
                 - /url: https://www.linkedin.com/company-beta/2832447/
     - paragraph
     - paragraph
-  - dialog [active] [ref=e1123]:
-    - generic [ref=e1126]:
-      - generic [ref=e1128]:
-        - generic [ref=e1130]:
-          - img "Business QR Request" [ref=e1132]
-          - generic [ref=e1133]: Business QR Request
-        - generic [ref=e1135] [cursor=pointer]:  
-      - paragraph [ref=e1139]:
-        - banner [ref=e1140]:
-          - img [ref=e1141]
-        - text: Please enter your detail.
-        - text: You will receive call from our team.
-        - text: "If you have any query, contact :"
-        - text: eSewa Customer Support 1660-01-02121 or
-        - text: write at qr@esewa.com.np
-        - paragraph
 ```
