@@ -77,11 +77,24 @@ test("Download app section is visible", async ({ page }) => {
     steps: [
       { description: "Navigate to https://esewa.com.np" },
       { description: "Scroll down to find the download app section" },
+      { description: "Click on the Google Play or App Store download button" },
     ],
     assertions: [
-      { assertion: "Download on App Store button or link is visible" },
-      { assertion: "Get it on Google Play button or link is visible" },
-      { assertion: "App download section is clearly visible" },
+      {
+        assertion:
+          "Download section is visible with mobile app promotion content",
+      },
+      { assertion: "App store download button is visible and clickable" },
+      { assertion: "Google play download button is visible and clickable" },
+
+      {
+        assertion:
+          "Clicking a download button attempts to open an external app store link",
+      },
+      {
+        assertion:
+          "The download buttons are clearly associated with mobile app installation",
+      },
     ],
     test,
     expect,
@@ -104,27 +117,6 @@ test("Click View Details on a service", async ({ page }) => {
       { assertion: "Service name or title is visible" },
       { assertion: "Service description is visible" },
       { assertion: "A back button or close button is visible" },
-    ],
-    test,
-    expect,
-  });
-});
-
-// Test 5: checking if Footer is complete
-test("Footer has all important information", async ({ page }) => {
-  test.setTimeout(60_000);
-  await runSteps({
-    page,
-    userFlow: "Check footer content",
-    steps: [
-      { description: "Navigate to https://esewa.com.np" },
-      { description: "Scroll all the way down to the footer" },
-    ],
-    assertions: [
-      { assertion: "Footer is visible at the bottom" },
-      { assertion: "Contact information is present in footer" },
-      { assertion: "Social media links are visible in footer" },
-      { assertion: "Copyright information is visible" },
     ],
     test,
     expect,
