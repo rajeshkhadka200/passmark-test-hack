@@ -38,12 +38,30 @@ test("Hero section has key content", async ({ page }) => {
     userFlow: "Check hero section",
     steps: [
       { description: "Navigate to https://esewa.com.np" },
-      { description: "Look at the hero section" },
+      { description: "Focus on the hero section at the top of the page" },
+      {
+        description:
+          "Click on the primary call-to-action button in the hero section",
+      },
     ],
     assertions: [
-      { assertion: "A headline or tagline is visible" },
-      { assertion: "A call to action button is visible" },
-      { assertion: "Hero image or banner is visible" },
+      { assertion: "Hero section contains a clear headline or tagline" },
+      {
+        assertion:
+          "A primary call to action button is visible in the hero section",
+      },
+      {
+        assertion:
+          "A banner image or visual element is displayed in the hero section",
+      },
+      {
+        assertion:
+          "Clicking the call to action button leads to a relevant section or page",
+      },
+      {
+        assertion:
+          "Page content changes or scrolls after clicking the call-to-action button",
+      },
     ],
     test,
     expect,
