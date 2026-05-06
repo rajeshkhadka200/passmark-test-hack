@@ -6,13 +6,24 @@ test("Homepage loads correctly", async ({ page }) => {
   test.setTimeout(60_000);
   await runSteps({
     page,
-    userFlow: "Check eSewa homepage",
-    steps: [{ description: "Navigate to https://esewa.com.np" }],
+    userFlow:
+      "Validate eSewa homepage loads with key elements and basic interactions",
+    steps: [
+      { description: "Navigate to https://esewa.com.np" },
+      { description: "Click on the eSewa logo" },
+    ],
     assertions: [
-      { assertion: "eSewa logo is visible on the page" },
-      { assertion: "Homepage hero section is visible" },
-      { assertion: "Page title contains eSewa" },
-      { assertion: "Navigation menu is visible" },
+      { assertion: "eSewa logo is visible in the header" },
+      { assertion: "User remains on or is redirected to homepage" },
+      { assertion: "Top navigation menu with multiple items is visible" },
+      { assertion: "Page title contains the word eSewa" },
+      { assertion: "Hero section displays a headline or key message" },
+
+      {
+        assertion:
+          "Clicking the eSewa logo keeps or brings the user to the homepage",
+      },
+      { assertion: "Navigation menu items appear clickable or interactive" },
     ],
     test,
     expect,
